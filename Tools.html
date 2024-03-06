@@ -110,6 +110,13 @@
             document.getElementById("Zakat").innerHTML= "Zakat is "+Zakat.toFixed(2);
             alert( "Zakat is "+Zakat.toFixed(2));
         }
+
+        function showTool(tool) {
+        if (tool) {
+            // Depending on the selected tool, you can perform actions here
+            alert("You selected " + tool);
+        }
+    }
     </script>
 </head>
 <body>
@@ -124,14 +131,16 @@
         </nav>
     </header>
 
-    <div class="container">
+   <div class="container">
         <!-- Tool selection dropdown -->
-        <select onchange="showTool(this.value)">
+        <select onchange="showTool(this.value)" style="padding: 10px; font-size: 16px; border-radius: 5px;">
+            <option value="" disabled selected>Select Tool</option>
             <option value="calculator">Simple Calculator</option>
             <option value="BMI">BMI Checker</option>
             <option value="zakat">Zakat or Income Tax Calculator</option>
             <option value="converter">Unit Converter</option>
         </select>
+    </div>
 
         <!-- Your calculator HTML content -->
         <div class="calculator-container tool" id="calculator">
