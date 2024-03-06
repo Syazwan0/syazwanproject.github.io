@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Family Tree</title>
+    <link rel="stylesheet" href="Style.css"> <!-- You can link your CSS file here -->
+    <style>
+        .family-section {
+            text-align: center;
+            margin: 20px auto;
+            padding: 20px;
+            border: 1px solid #ccc;
+            border-radius: 10px;
+            max-width: 800px;
+        }
+        .header {
+            margin-bottom: 20px;
+            font-size: 24px;
+            color: #333;
+        }
+        .parents {
+            display: flex;
+            justify-content: space-around;
+            margin-bottom: 20px;
+        }
+        .person {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+        .siblings{
+            display: flex; /* Display siblings in a row */
+            justify-content: space-around; /* Evenly distribute siblings */
+            align-items: center; /* Align items vertically */
+            margin-bottom: 20px;
+        }
+        .siblings img {
+            display: block;
+            margin: 0 auto;
+            border-radius: 10px;
+            width: 150px; /* Adjust size as needed */
+            height: 150px; /* Adjust size as needed */
+            object-fit: cover;
+        }
+        .person img {
+            display: block;
+            margin: 0 auto;
+            border-radius: 10px;
+            width: 150px; /* Adjust size as needed */
+            height: 150px; /* Adjust size as needed */
+            object-fit: cover;
+        }
+        .description {
+            margin-top: 10px;
+        }
+        .family-picture {
+            text-align: center;
+            margin: 20px auto;
+            padding: 20px;
+            border: 1px solid #ccc;
+            border-radius: 10px;
+            max-width: 800px;
+        }
+        .family-picture img {
+            display: block;
+            margin: 0 auto;
+            border-radius: 10px;
+            width: 300px; /* Adjust size as needed */
+            height: auto; /* Adjust size as needed */
+            object-fit: cover;
+        }
+
+        h1 {
+            text-align: center;
+            text-transform: uppercase;
+            letter-spacing: 10px;
+            color: black; /* Google blue */
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>My Family</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="PersonalInfo.html">Personal Info</a></li>
+                <li><a href="Tools.html">Tools</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section class="family-section">
+        <div class="header">
+            My Family Tree
+        </div>
+
+        <div class="parents">
+            <div class="person">
+                <img src="familyPic/ayah.jpg" alt="Dad">
+                <p>Dad</p>
+            </div>
+            <div class="person">
+                <img src="familyPic/mama.jpg" alt="Mom">
+                <p>Mom</p>
+            </div>
+        </div>
+
+        <div class="siblings">
+            <div class="person">
+                <img src="familyPic/along.jpg" alt="Big Brother">
+                <p>Big Brother</p>
+            </div>
+            <div class="person">
+                <img src="familyPic/wawan.jpg" alt="You">
+                <p>ME</p>
+            </div>
+            <div class="person">
+                <img src="familyPic/chapa.jpg" alt="Small Sister">
+                <p>Small Sister</p>
+            </div>
+        </div>
+    </section>
+
+    <section class="family-picture">
+        <div class="header">
+            Family Picture
+        </div>
+        <img src="familyPic/family.jpg" alt="Family Picture">
+    </section>
+    <br>
+</body>
+</html>
+
